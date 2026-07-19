@@ -1,10 +1,25 @@
 # claudelearnpath
 
-A simple Java application.
+A simple Spring Boot application exposing a hello world REST endpoint.
+
+Requires Maven and JDK 17+ installed.
 
 ## Run
 
 ```
-javac src/Main.java -d out
-java -cp out Main
+mvn spring-boot:run
+```
+
+Then visit:
+
+```
+GET http://localhost:8080/hello
+```
+
+which returns `Hello, World!`.
+
+## Build
+
+```
+mvn package
 ```
